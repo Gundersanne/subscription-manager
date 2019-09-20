@@ -365,6 +365,8 @@ Requires: %{?suse_version:dejavu} %{!?suse_version:dejavu-sans-fonts}
 %if !0%{?suse_version}
 Requires(post): scrollkeeper
 Requires(postun): scrollkeeper
+%else
+Requires: hicolor-icon-theme
 %endif
 
 %description -n rhsm-gtk
